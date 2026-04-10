@@ -1,4 +1,69 @@
+/* css document*/
+@charset "utf-8";
+
+@font-face {
+    font-family: Dancing Script;
+    src: url("fuentes/DancingScript-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Dancing Script Bold;
+    src: url("fuentes/dancingscriptbold.ttf") format ("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Dancing Script Medium;
+    src: url("fuentes/DancingScript-Medium.ttf") format ("truetype");
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: Dancing Script SemiBold;
+    src: url("fuentes/DancingScript-SemiBold.ttf") format ("truetype");
+    font-weight: semibold;
+    font-style: normal;
+}
 h1{
-    color: rgb(76, 128, 186);
-    font: 30px Alegreya, sans-serif;  
-}  
+    font-family: Dancing Script Bold, cursive;
+    font-size: 70px;
+    color: #1a9f7e;
+    text-align: center;
+}
+h2{
+    font-family: Dancing Script, cursive;
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+}
+@font-face {
+    font-family: AlegreyaSS;
+    src: url("fuentes/alegreyasansregular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: AlegreyaSSB;
+    src: url("fuentes/alegreyasansbold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: AlegreyaSSL;
+    src: url("fuentes/alegreyasanslight.ttf") format("truetype");
+    font-weight: light;
+    font-style: normal;
+}
+@font-face {
+    font-family: AlegreyaSSI;
+    src: url("fuentes/alegreyasansitalic.ttf") format("truetype");
+    font-weight: italic;
+    font-style: italic;
+}
+h3{
+    font-family: AlegreyaSS, sans-serif;
+    font-size: 15px;
+    color: #000000;
+    text-align: left;
+}
