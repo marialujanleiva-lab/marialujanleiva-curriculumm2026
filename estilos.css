@@ -9,19 +9,19 @@
 }
 @font-face {
     font-family: Dancing Script Bold;
-    src: url("fuentes/dancingscriptbold.ttf") format ("truetype");
+    src: url("fuentes/dancingscriptbold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: Dancing Script Medium;
-    src: url("fuentes/DancingScript-Medium.ttf") format ("truetype");
+    src: url("fuentes/DancingScript-Medium.ttf") format("truetype");
     font-weight: medium;
     font-style: normal;
 }
 @font-face {
     font-family: Dancing Script SemiBold;
-    src: url("fuentes/DancingScript-SemiBold.ttf") format ("truetype");
+    src: url("fuentes/DancingScript-SemiBold.ttf") format("truetype");
     font-weight: semibold;
     font-style: normal;
 }
@@ -38,32 +38,35 @@ h2{
     text-align: center;
 }
 @font-face {
-    font-family: Alegreya regular;
+    font-family: alegreyaregular;
     src: url("fuentes/alegreyasansregular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: AlegreyaSSB;
+    font-family: alegreyassb;
     src: url("fuentes/alegreyasansbold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
-    font-family: AlegreyaSSL;
+    font-family: alegreyassl;
     src: url("fuentes/alegreyasanslight.ttf") format("truetype");
     font-weight: light;
     font-style: normal;
 }
 @font-face {
-    font-family: AlegreyaSSI;
+    font-family: alegreyassi;
     src: url("fuentes/alegreyasansitalic.ttf") format("truetype");
     font-weight: italic;
     font-style: italic;
 }
 h3{
-    font-family: Alegreya regular, sans-serif;
+    font-family: alegreyassi, sans-serif;
     font-size: 15px;
     color: #000000;
     text-align: left;
+}
+*{
+    font-family: alegreya regular, sans-serif;
 }
