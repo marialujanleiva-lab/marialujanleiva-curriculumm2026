@@ -26,7 +26,7 @@
     font-style: normal;
 }
 h1{
-    font-family: Dancing Script Bold, cursive;
+    font-family: Dancing Script bold, cursive;
     font-size: 70px;
     color: #1a9f7e;
     text-align: center;
@@ -38,7 +38,7 @@ h2{
     text-align: center;
 }
 @font-face {
-    font-family: AlegreyaSS;
+    font-family: Alegreya regular;
     src: url("fuentes/alegreyasansregular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -62,7 +62,7 @@ h2{
     font-style: italic;
 }
 h3{
-    font-family: AlegreyaSS, sans-serif;
+    font-family: Alegreya regular, sans-serif;
     font-size: 15px;
     color: #000000;
     text-align: left;
