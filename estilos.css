@@ -1,6 +1,10 @@
 /* css document*/
 @charset "utf-8";
 
+*{
+    background-color: #f3ffd9;
+}
+
 @font-face {
     font-family: Dancing Script;
     src: url("fuentes/DancingScript-Regular.ttf") format("truetype");
@@ -13,30 +17,21 @@
     font-weight: bold;
     font-style: normal;
 }
-@font-face {
-    font-family: Dancing Script Medium;
-    src: url("fuentes/DancingScript-Medium.ttf") format("truetype");
-    font-weight: medium;
-    font-style: normal;
-}
-@font-face {
-    font-family: Dancing Script SemiBold;
-    src: url("fuentes/DancingScript-SemiBold.ttf") format("truetype");
-    font-weight: semibold;
-    font-style: normal;
-}
+
 h1{
     font-family: Dancing Script bold, cursive;
-    font-size: 70px;
+    font-size: 7rem;
     color: #1a9f7e;
     text-align: center;
+    line-height: 0.5rem;
 }
 h2{
     font-family: Dancing Script, cursive;
-    font-size: 40px;
+    font-size: 3.2rem;
     color: #000000;
     text-align: center;
 }
+
 @font-face {
     font-family: alegreyaregular;
     src: url("fuentes/alegreyasansregular.ttf") format("truetype");
@@ -61,12 +56,17 @@ h2{
     font-weight: italic;
     font-style: italic;
 }
+
 h3{
     font-family: alegreyassi, sans-serif;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #000000;
     text-align: left;
 }
-*{
+p{
     font-family: alegreya regular, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-wrap-style: balance;
+    text-align: center;
 }
