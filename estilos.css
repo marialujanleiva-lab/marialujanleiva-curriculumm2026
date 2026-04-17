@@ -37,6 +37,14 @@ h3{
     padding: 1rem;
     gap: 20px;
     flex-wrap: wrap;
+    max-width: 900px ;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #ilustraciones{
@@ -102,15 +110,10 @@ header{
     background-color: #179072;
 }
 
-footer{
-    background-color: #179072;
-    justify-content: center;
-    list-style: none;
-    align-items: center;
-    padding: 1rem;
-}
+
+
 .icono{
-    background-color: rgb(23 144 114 / 40%);
+    background-color: #17907266;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +123,9 @@ footer{
     width: 80%;
     box-sizing: border-box;
     flex-direction: row;
+    max-width: max-content;
 }
+
 .texto{
     display: flex;
     flex: 1;
@@ -146,7 +151,7 @@ footer{
 h1{
     font-family: Dancing Script bold, cursive;
     font-size: 7rem;
-    color: rgb(26, 159, 126);
+    color: #1a9f7e;
     text-align: center;
     padding-block-start: 46px;
 }
@@ -186,6 +191,19 @@ p{
     padding: 15px 100px;
 }
 
+footer{
+    background-color: #179072;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    padding: 1rem;
+}
+
+.icono p{
+    padding: 0;
+    max-width: 400px;
+}
 .subtitulo h2{
     font-family: alegreyassl;
     font-size: 2.8rem;    
