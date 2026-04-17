@@ -1,8 +1,133 @@
 /* css document*/
 @charset "utf-8";
 
-*{
+body{
     background-color: #f3ffd9;
+}
+
+ul{
+    list-style: none;
+}
+
+.interes{
+    padding: 26px;
+}
+
+h2{
+    font-family: Dancing Script, cursive;
+    font-size: 3.2rem;
+    color: #000000;
+    text-align: center;
+    padding-top: 0px
+}
+
+h3{
+    font-family: alegreyassi, sans-serif;
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+}
+
+#trabajos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#ilustraciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#Diseño2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.botonera{
+    background-color: #1a9f7e;
+    text-decoration: none;
+    margin: 0px 15px;
+    justify-content: left;
+    align-items: center;
+    padding: 1rem;
+}
+.identidad{
+    height: 100%;
+    padding: 0.5rem 2rem;
+}
+.identidad a{
+    font-family: Dancing Script, sans-serif;
+    font-size: 1.5rem;
+    color: aliceblue; 
+}
+.botonera a{
+    font-family: alegreyaregular;
+    font-size: 1.2rem;
+    color: aliceblue;
+    padding: 0.5rem 1rem;
+}
+.botonera a:hover{
+    color: #25deb0;
+    border-radius: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    background-color: #179072;
+}
+
+footer{
+    background-color: #179072;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    padding: 1rem;
+}
+.icono{
+    background-color: rgb(23 144 114 / 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 25px 100px;
+    gap: 20px;
+    width: 80%;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.texto{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1px 0px;
 }
 
 @font-face {
@@ -21,15 +146,9 @@
 h1{
     font-family: Dancing Script bold, cursive;
     font-size: 7rem;
-    color: #1a9f7e;
+    color: rgb(26, 159, 126);
     text-align: center;
-    line-height: 0.5rem;
-}
-h2{
-    font-family: Dancing Script, cursive;
-    font-size: 3.2rem;
-    color: #000000;
-    text-align: center;
+    padding-block-start: 46px;
 }
 
 @font-face {
@@ -57,16 +176,20 @@ h2{
     font-style: italic;
 }
 
-h3{
-    font-family: alegreyassi, sans-serif;
-    font-size: 1.5rem;
-    color: #000000;
-    text-align: left;
-}
 p{
     font-family: alegreya regular, sans-serif;
     font-size: 1.2rem;
     line-height: 1.8rem;
     text-wrap-style: balance;
     text-align: center;
+    max-width: 1200px;
+    padding: 15px 100px;
+}
+
+.subtitulo h2{
+    font-family: alegreyassl;
+    font-size: 2.8rem;    
+    color: #000000;
+    text-align: center;
+    padding-top: 0px
 }
