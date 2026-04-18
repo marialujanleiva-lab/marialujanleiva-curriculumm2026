@@ -6,10 +6,10 @@
         <link href="estilos.css" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/png" href="img/favicom.png">    
     </head>
-    <body>
-        <header>
+    <body><!--  -->
+        <header> <!--  -->
             <div class="identidad"> 
-                <img src="img/favicom.png" alt="Logo"> <a>María Luján Leiva</a>
+                <img src="img/favicom.png" alt="Logo"> <a>María Luján Leiva</a> <!-- guarda con el indentado acá, también fijate que una a se usa sólo cuando tiene intención de enlazarse a algún lado y acá ni pusiste el atributo href  -->
             </div>
             <nav class="botonera">
                 <a href="#">Inicio</a>
@@ -21,20 +21,20 @@
             </nav>
         </header>
 
-        <main>
-            <section>
+        <main>  
+            <section> <!-- guarda! no tiene sentido semántico que una section contenga un solo elemento como el título, en general suele ser más rica en contenido, por ejemplo una section con el título, subtitulo y la descripción. Te pasa esto con todas las sections  -->
                 <h1>María Luján Leiva</h1>
             </section>
-                <section class="subtitulo">
+                <section class="subtitulo"> <!-- esta class no tiene sentido porque ya existe una etiqueta cuyo significado es ser un subtítulo, que es efectivamente el h2. te va a convenir cambiar todos los h2 que no sean este y se conviertan en h3 porque en la lógica de tu tp tiene más sentido -->
                     <h2>Estudiante de Diseño y Comunicación Visual</h2>
                  </section>  
                 <section class="icono">
-                    <img src="img/ilustracion.mia.png" width="302px" alt="Autoretrato">
-                    <article class="texto">
+                    <img src="img/ilustracion.mia.png" width="302px" alt="Autoretrato"> <!-- te falta poner height -->
+                    <article class="texto"> <!-- este article no tiene tanto sentido de existir, te alarga el código y sólo contiene un elemento (la p) que ya está contenido. Si querés mejorar la semántica, la section "icono" podría convertirse en un article para agrupar estos dos elementos, pero como section también tiene sentido semántico. Tomá la decisión que mejor te convenza -->
                         <p>Hola, soy María Luján Leiva, estudiante de Diseño y Comunicación Visual en la Universidad Nacional de Lanús (arg.) y trabajo en un bufet escolar. En mis momentos libres me ocupo de la parte visual de las redes sociales de la parroquia a la que asisto y formo parte (La Anunciación de Luís Guillón) haciendo afiches para sus eventos y publicando contenido de los grupos que la integran.</p> 
                     </article>
                 </section>
-            </section>
+            </section> <!-- acá te hiciste un chino, esta section no tiene etiqueta de apertura y te genera una mala indentación  -->
 
             <section class="interes">
                 <h2>Mis intereses</h2>
@@ -46,17 +46,17 @@
                 <h3>Libro: El mundo de tus suculentas</h3>
             </section>
              <section id="trabajos">
-                <a>
-                    <img src="img/afiche.jpg" alt="Trabajo práctico ET2"   width="400">  
+                <a> <!-- ninguna de las a acá tiene el atributo href  -->
+                    <img src="img/afiche.jpg" alt="Trabajo práctico ET2"   width="400">  <!-- falta height -->
                 </a>
                 <a>
-                    <img src="img/libroportada.jpg" alt="Portada de: El mundo de tus suculentas" width="400">
+                    <img src="img/libroportada.jpg" alt="Portada de: El mundo de tus suculentas" width="400"> <!-- falta height -->
                 </a>
                 <a>
-                    <img src="img/librodoblepagina.jpg" alt="Doble página del libro: El mundo de tus suculentas" width="400">
+                    <img src="img/librodoblepagina.jpg" alt="Doble página del libro: El mundo de tus suculentas" width="400"> <!-- falta height -->
                 </a>
                 <a>
-                    <img src="img/memoriadescriptivadoblepagina.jpg" alt="Contraportada del libro: El mundo de tus suculentas" width="400">
+                    <img src="img/memoriadescriptivadoblepagina.jpg" alt="Contraportada del libro: El mundo de tus suculentas" width="400"> <!-- falta height -->
                 </a>
                 <p>Estas imágenes representan una parte de mi trabajo final de la materia Espacio Tipográfico 2, el cual consistió en el diseño y producción de un libro con una temática: plantas. En el desarrollo del mismo tomé decisiones tipográficas, paleta cromática, imágenes, ilustraciones y material.</p>
             </section>
@@ -65,23 +65,23 @@
             </section>
             <section id="ilustraciones">
                 <a>
-                    <img src="img/esquilax.jpg" alt="Ilustración digital" width="300"> 
+                    <img src="img/esquilax.jpg" alt="Ilustración digital" width="300">  <!-- falta height -->
                 </a>
                 <a>
-                    <img src="img/autoretrato.jpg" alt="Autoretrato" width="300">
+                    <img src="img/autoretrato.jpg" alt="Autoretrato" width="300"> <!-- falta height -->
                 </a>
             </section>
             <section>
                 <h3>Afiches</h3>
             </section>
-            <section id="Diseño2">
-                <img src="img/afiche.figurativo.jpg" alt="Afiche 1" width="300"> <img src="img/aficheletristico.jpg" alt="Afiche 2" width="300">
+            <section id="Diseño2"> <!-- los ids y class no se escriben con mayúsculas -->
+                <img src="img/afiche.figurativo.jpg" alt="Afiche 1" width="300"> <img src="img/aficheletristico.jpg" alt="Afiche 2" width="300"> <!-- falta height -->
             </section>
                 <section>
                     <h2>Hobbies</h2>
                     <p>Me gusta mucho dibujar, escuchar música, hacer deporte como salir a caminar y leer libros de fantasía (mis favoritos: Harry Potter y Asesino de Brujas). En mis ratos libres también me gusta cocinar, ver películas (mi play list: Harry Potter, Shrek, La era de hielo, Madagascar, El Señor de los anillos, entre otras) y pasar tiempo con mis amigos.</p>
                 </section>
-            <section>
+            <section> <!-- toda esta sección de contacto puede mejorar su semántica, revisá el video de etiquetas a -->
                 <h2>Contacto</h2>
                 <p>Teléfono: 12-3456-7890</p>
                 <p>email: maria.lujan.leiva@email.com</p>
@@ -92,8 +92,8 @@
             <p>Cátedra: Wischñevsky 2026</p>
             <p>Alumna: María Luján Leiva</p>
             <ul> 
-                <li>
-                    <a href="https://www.instagram.com/lujiileiva?igsh=MWMzNng4cHMzNm1lbA==">Instagram</a>
+                <li> <!-- guarda acá que las etiquetas a del footer no tienen ninguna propiedad y quedan desprolijas -->
+                    <a href="https://www.instagram.com/lujiileiva?igsh=MWMzNng4cHMzNm1lbA==">Instagram</a> <!-- una buena práctica es agregar a los links que llevan a páginas externas el atributo target="_blank" para que se abran en una pestaña nueva y las personas no pierdan tu página -->
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/maria-lujan-leiva-a53203244/?skipRedirect=true">LinkedIn</a>

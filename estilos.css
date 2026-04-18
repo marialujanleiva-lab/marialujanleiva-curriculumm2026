@@ -18,13 +18,13 @@ h2{
     font-size: 3.2rem;
     color: #000000;
     text-align: center;
-    padding-top: 0px
+    padding-top: 0px /* no cerraste con punto y coma */
 }
 
 h3{
     font-family: alegreyassi, sans-serif;
     font-size: 1.5rem;
-    color: #000000;
+    color: #000000; /* esta propiedad no produce cambios */
     text-align: center;
     padding: 15px;
 }
@@ -33,8 +33,8 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    align-items: center; /* no produce cambios */
+    padding: 1rem; /* los rems son medidas tipográficas y acá lo estás estableciendo en una propiedad que no tiene nada que ver con la tipografía. lo correcto es usar px */
     gap: 20px;
     flex-wrap: wrap;
     max-width: 900px ;
@@ -43,11 +43,11 @@ h3{
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* esta propiedad no funciona */
     align-items: center;
 }
 
-#ilustraciones{
+#ilustraciones{ /* te pasa que tanto lo que tenés en trabajos, ilustraciones y diseño2 tienen exactamente las mismas propiedades, este es un caso para utilizar class, definir una sola vez los estilos, y a las tres etiquetas ponerles la misma class para tener un código más corto, por ejemplo, que todos se llamen "trabajos-galeria" */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,19 +71,19 @@ main{
     margin: 0;
     padding: 0;
     text-decoration: none;
-}
+} /* el selector universal va ubicado al principio del archivo para no tener que repetir sus propiedades */
 
 .botonera{
-    background-color: #1a9f7e;
-    text-decoration: none;
+    background-color: #1a9f7e; /* ojo! estás metiendo un fondo de color en esta botonera y se contrasta con el header, no parece una decisión de diseño correctamente tomada */
+    text-decoration: none; /* esta propiedad ya la pusiste en el selector universal. no repitas! */
     margin: 0px 15px;
-    justify-content: left;
-    align-items: center;
-    padding: 1rem;
+    justify-content: left; /* esta propiedad no funciona */
+    align-items: center; /* no funciona */
+    padding: 1rem; /* es medida tipográfica!!! */
 }
 .identidad{
-    height: 100%;
-    padding: 0.5rem 2rem;
+    height: 100%; /* que el alto sea de 100% jamás va a funcionar porque no existe una altura fija en la página por causa del scroll vertical, que es muy distinto al width que sí puede tener porcentajes. También, este elemento no necesita una altura fija, podrías hacer que el tamaño lo tome a partir de los paddings */
+    padding: 0.5rem 2rem; /* es medida tipográfica!!! */
 }
 .identidad a{
     font-family: Dancing Script, sans-serif;
@@ -94,7 +94,7 @@ main{
     font-family: alegreyaregular;
     font-size: 1.2rem;
     color: aliceblue;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem; /* es medida tipográfica!!! */
 }
 .botonera a:hover{
     color: #25deb0;
@@ -106,7 +106,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1px;
+    padding: 1px; /* este padding es muy raro, por qué necesitarías tener exactamente 1 pixel de espacio interno para tu diseño? */
     background-color: #179072;
 }
 
@@ -115,24 +115,24 @@ header{
 .icono{
     background-color: #17907266;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* no produce cambios */
     align-items: center;
     padding: 20px;
-    margin: 25px 100px;
+    margin: 25px 100px; /* guarda con ese margin de 100px, es muy grande! te va a traer complicaciones cuando tengas pantallas más chicas, con el max-width es suficiente */
     gap: 20px;
-    width: 80%;
-    box-sizing: border-box;
+    width: 80%; /* esto también está de más */
+    box-sizing: border-box; /* no produce cambios */
     flex-direction: row;
-    max-width: max-content;
+    max-width: max-content; /* acá te conviene usar píxeles fijos */
 }
 
 .texto{
-    display: flex;
+    display: flex; /* todas las propiedades que tienen que ver con flex en este selector no generan cambios */
     flex: 1;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    margin: 1px 0px;
+    padding: 1rem; /* medida tipográfica!!! */
+    margin: 1px 0px; /* de qué sirve un margin tan chiquito? */
 }
 
 @font-face {
@@ -140,7 +140,7 @@ header{
     src: url("fuentes/DancingScript-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-}
+} /* las fuentes van declaradas al principio del archivo!! tal vez por eso no te toma la tipografía y a mi me aparece en comic sans */
 @font-face {
     font-family: Dancing Script Bold;
     src: url("fuentes/dancingscriptbold.ttf") format("truetype");
@@ -152,8 +152,8 @@ h1{
     font-family: Dancing Script bold, cursive;
     font-size: 7rem;
     color: #1a9f7e;
-    text-align: center;
-    padding-block-start: 46px;
+    text-align: center; /* no produce cambios */
+    padding-block-start: 46px; /* esta propiedad no la vimos, de dónde salió? */
 }
 
 @font-face {
@@ -188,14 +188,14 @@ p{
     text-wrap-style: balance;
     text-align: center;
     max-width: 1200px;
-    padding: 15px 100px;
+    padding: 15px 100px; /* alerta de padding muy grande */
 }
 
 footer{
     background-color: #179072;
     display: flex;
     justify-content: center;
-    list-style: none;
+    list-style: none; /* no repitas! ya lo declaraste en el selector universal */
     align-items: center;
     padding: 1rem;
 }
@@ -207,7 +207,7 @@ footer{
 .subtitulo h2{
     font-family: alegreyassl;
     font-size: 2.8rem;    
-    color: #000000;
-    text-align: center;
-    padding-top: 0px
+    color: #000000; /* no repitas!! */
+    text-align: center; /* no repitas!! */
+    padding-top: 0px /* no repitas!! */
 }
