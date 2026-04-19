@@ -12,3 +12,5 @@ Para este mismo utilicé lenguaje HTML, CSS y Flexbox. Por otro lado, también r
 
 ## Aprendizaje: 
 A lo largo de este trabajo fuí aprendiendo a usar el editor de códigos: Visual Code, con sus diferentes etiquetas. También a utilizar la herramienta GitHub. Pero como dije esto aún está en proceso por lo que sigo aprendiendo y corrigiendo. 
+
+Dejo el link del figma donde hice un boceto para comenzar a poner en orden las ideas: https://www.figma.com/design/m0BAeCLq2kFW0eMWauCai6/Borrador-de-web?node-id=0-1&t=OnMPGidggUB5XLWu-1
