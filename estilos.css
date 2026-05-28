@@ -213,7 +213,7 @@ footer ul{
     padding: 3px 20px;
 }
 
-@media screen and (min-width: 500px) and (max-width: 1920px) {
+@media screen and (min-width: 500px){
 /* Tengo dudas en cuanto al media: ¿Los valores están bien? y ¿sólo irían las propiedades que cambiamos de cada estilo no? */
     main{
     display: flex;
