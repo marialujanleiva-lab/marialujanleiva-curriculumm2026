@@ -212,3 +212,64 @@ footer ul{
     font-size: 1.2rem;
     padding: 3px 20px;
 }
+
+@media screen and (min-width: 500px) and (max-width: 1920px) {
+/* Tengo dudas en cuanto al media: ¿Los valores están bien? y ¿sólo irían las propiedades que cambiamos de cada estilo no? */
+    main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    p{
+    font-family: alegreya regular, sans-serif;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-wrap-style: balance;
+    text-align: left;
+    max-width: 500px;
+    padding: 10px 50px 20px;
+    }
+
+    .botonera a{
+    font-family: alegreyaregular;
+    font-size: 1.2rem;
+    color: #000000;
+    padding: 0.5px 5px; 
+    }
+
+    header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10px 20px 30px;
+    background-color: #179072;
+    }
+
+    h1{
+    font-family: Dancing Script Bold, cursive;
+    font-size: 5rem;
+    color: #1a9f7e;
+    padding: 20px 0px 0px 60px;
+    display: flex;
+    justify-content: left;
+    }
+
+    h2{
+    font-family: alegreyassl, sans-serif;
+    font-size: 2.2rem;    
+    display: flex;
+    justify-content: left;
+    padding: 10px 0px 0px 60px;
+    }
+
+    footer{
+    background-color: #9198ff;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 90px;
+    }
+
+}
