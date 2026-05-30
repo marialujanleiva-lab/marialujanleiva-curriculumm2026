@@ -58,7 +58,7 @@ ul{
 }
 
 h3{
-    font-family: Dancing Script, cursive;
+    font-family: Dancing Script, cursive; /* todavía no está funcionando bien esta tipo desde el tp anterior!!! */
     font-size: 3.2rem;
     color: #0ED599;
     text-align: center;
@@ -101,15 +101,15 @@ main{
 
 .botonera{
     margin: 0px 15px;
-    padding: 1px; 
+    padding: 1px; /* es necesario un padding de un pixel? */
 }
 
 #contactate{
-    padding: 0.5px 2px 50px; 
+    padding: 0.5px 2px 50px;  /* es hiper necesario un padding de medio pixel? */
 }
 
 address{
-    padding: 0px 0px 20px;
+    padding: 0px 0px 20px; /* si vas a usar una sola propiedad de padding te conviene establecer solo esa (bottom) porque técnicamente ya estableciste en el selector universal que todos tienen que ser de cero, entonces estás repitiendo y no es correcto */
 }
 
 address a{
@@ -150,7 +150,7 @@ header{
     margin: 25px;
     gap: 20px;
     flex-direction: row;
-    max-width: 762px;
+    max-width: 762px; /* esta propiedad no está funcionando */
     border-radius: 30px 0px;
 }
 
@@ -158,8 +158,8 @@ h1{
     font-family: Dancing Script Bold, cursive;
     font-size: 7rem;
     color: #0ED599;
-    padding: 20px 0px 0px;
-     display: flex;
+    padding: 20px 0px 0px; /* misma corrección de valores repetidos en address */
+     display: flex; /* por qué un texto tiene propiedades flex y no su padre? */
      justify-content: center;
 }
 
@@ -168,7 +168,7 @@ p{
     font-size: 1.2rem;
     line-height: 1.8rem;
     text-wrap-style: balance;
-    text-align: center;
+    text-align: center; /* en el primer tp hablamos de que no es bueno dejar a todos los textos centrados porque te condicina a los textos de lectura, mejor aplicar center a los elementos específicos que lo necesiten */
     max-width: 500px;
     padding: 0px 50px 20px;
 }
@@ -193,7 +193,7 @@ footer{
 h2{
     font-family: alegreyassl, sans-serif;
     font-size: 2.8rem;    
-    display: flex;
+    display: flex; /* por qué un texto con flex? */
     justify-content: center;
 }
 
