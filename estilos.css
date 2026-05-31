@@ -221,15 +221,22 @@ footer ul{
     padding: 20px 0px 50px;
 }
 
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0px 0px 0px 50px;
+}
+
 #galerias{
     display: flex;
     flex-direction: row;
-    align-items: left;
-    padding: 15px 10px 15px 10px;
-    box-sizing: border-box;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    gap: 20px;
+    justify-content: left;
+    height: 555px;
+    padding: 16px 0px 0px 50px;
+    align-items: flex-start;
+    gap: 50px;
+    flex-shrink: 0;
 }
 
 
