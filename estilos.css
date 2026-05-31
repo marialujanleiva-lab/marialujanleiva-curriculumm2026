@@ -2,8 +2,8 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: Dancing Script;
-    src: url("fuentes/DancingScript-Regular.ttf") format("truetype");
+    font-family: dancingscriptr;
+    src: url("fuentes/dancingscript-regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -47,65 +47,30 @@
 
 body{
     background-color: #f3ffd9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 ul{
     list-style: none;
 }
 
-.interes{
-    padding: 26px;
-}
-
-h3{
-    font-family: Dancing Script, cursive; /* todavía no está funcionando bien esta tipo desde el tp anterior!!! */
-    font-size: 3.2rem;
-    color: #0ED599;
-    text-align: center;
-    padding-top: 0px;
-}
 
 h4{
     font-family: alegreyassi, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     padding: 15px;
 }
 
-#trabajos-galeria{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0px; 
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 900px;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0px 66px;
-}
-
-#diseño2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 50px 50px;
-    gap: 20px;
-    flex-wrap: wrap;
-}
 
 .botonera{
     margin: 0px 15px;
-    padding: 1px; /* es necesario un padding de un pixel? */
-}
-
-#contactate{
-    padding: 0.5px 2px 50px;  /* es hiper necesario un padding de medio pixel? */
+    padding: 0px 30px; 
+    display: flex;
+    gap: 15px;
 }
 
 address{
@@ -124,12 +89,12 @@ address a{
 
 .botonera a{
     font-family: alegreyaregular;
-    font-size: 1.2rem;
-    color: aliceblue;
-    padding: 0.5px 3px; 
+    font-size: 1.5rem;
+    color: #000000;
 }
+
 .botonera a:hover{
-    color: #25deb0;
+    background-color: #25deb0;
     border-radius: 5px;
 }
 
@@ -142,39 +107,90 @@ header{
     background-color: #7AB5EF;
 }
 
-.icono{
-    background-color: #17907266;
+main{
     display: flex;
+    height: 920px;
+    padding: 25px 60px;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin: 25px;
-    gap: 20px;
+    gap: 28px;
+}
+
+#cabecera{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.áreas{
+    display: flex;
     flex-direction: row;
-    max-width: 762px; /* esta propiedad no está funcionando */
-    border-radius: 30px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+
+#index{
+    display: flex;
+    height: auto;
+    padding: 25px 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    align-self: stretch;
+}
+
+h3{
+    font-family: dancingscriptr, cursive;
+    font-size: 5rem;
+    color: #7AB5EF;
+    text-align: center;
+    padding-top: 0px;
+    animation-name: titulares;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes titulares {
+    0% {
+        color: #7AB5EF;
+    }
+    50% {
+        color: #179072;
+    }
+    100% {
+        color: #7AB5EF;
+    }
 }
 
 h1{
     font-family: Dancing Script Bold, cursive;
-    font-size: 7rem;
     color: #0ED599;
-    padding: 20px 0px 0px; /* misma corrección de valores repetidos en address */
-     display: flex; /* por qué un texto tiene propiedades flex y no su padre? */
-     justify-content: center;
+    font-size: 10rem;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: normal;
+
 }
 
 p{
     font-family: alegreya regular, sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
     text-wrap-style: balance;
-    text-align: center; /* en el primer tp hablamos de que no es bueno dejar a todos los textos centrados porque te condicina a los textos de lectura, mejor aplicar center a los elementos específicos que lo necesiten */
+    text-align: left;
     max-width: 500px;
-    padding: 0px 50px 20px;
-}
-
-.ilustraciones p{
-    padding: 0px 50px;
+    padding: 15px 30px 0px;
 }
 
 footer{
@@ -193,8 +209,6 @@ footer{
 h2{
     font-family: alegreyassl, sans-serif;
     font-size: 2.8rem;    
-    display: flex; /* por qué un texto con flex? */
-    justify-content: center;
 }
 
 footer ul{
@@ -214,34 +228,49 @@ footer ul{
     padding: 3px 20px;
 }
 
-.hero{
+#porfolio{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 10px 0 10px 50px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    padding: 20px 0px 50px;
+    padding: 20px 0px 0px;
+    gap: 30px;
 }
 
 .contenido{
     display: flex;
     flex-direction: column;
-    align-items: left;
-    padding: 0px 0px 0px 50px;
+    align-items: flex-start;
+    padding: 0px 0px 20px;
+    gap: 20px;
 }
+
+/*.contenido h3{
+    animation-name: none;
+    color: #000000;
+
+}*/
 
 #galerias{
     display: flex;
     flex-direction: row;
     justify-content: left;
     height: 555px;
-    padding: 16px 0px 0px 50px;
+    padding: 5px 0px 0px 20px;
     align-items: flex-start;
     gap: 50px;
-    flex-shrink: 0;
 }
 
 
 @media screen and (min-width: 500px) and (max-width: 1200px) {
-/* Tengo dudas en cuanto al media: ¿Los valores están bien? y ¿sólo irían las propiedades que cambiamos de cada estilo no? */
     main{
     display: flex;
     flex-direction: column;
@@ -309,14 +338,6 @@ footer ul{
     color: #179072;
     text-align: left;
     padding: 0px 40px;
-    }
-
-    .interes{
-    padding: 20px 40px;
-    }
-
-    .interes p{
-    padding: 10px 40px;
     }
 
     footer{
