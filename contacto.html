@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Porfolio personal</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="img/favicom.png">    
+    </head>
+
+<body>
+     <header>
+        <img src="img/logopersonal.png" alt="Logo">
+        <nav class="botonera">
+            <a href="index.html">Inicio</a>
+            <a href="sobremi.html">Sobre mí</a>
+            <a href="porfolio.html">Porfolio</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="contacto">
+        <section id="hola">
+            <h1>Contacto</h1>
+        </section>
+        <form method="post" action="mailto:maria.lujan.leiva@gmail.com"? subject="Email enviado desde el formulario" target="_blank" enctype="text/plain">
+        <article class="espacio">
+            <img src="img/ilustración-personal.png" alt="Ilustración personal" width="820" height="546">
+            <div class="formulario">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Ej.: María">
+
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" id="Email" placeholder="Ej.: fulano@gmail.com">
+
+                <label for="Texto">Contame tu idea:</label>
+                <textarea name="Texto" id="Texto" placeholder="Escribe tu mensaje aquí..." class="textarea"></textarea>
+
+                <input type="reset" value="Borrar" class="boton-formulario">
+                <input type="submit" value="Enviar" formenctype="text/plain" class="boton-formulario">
+            </div>
+        </article>
+        </form>
