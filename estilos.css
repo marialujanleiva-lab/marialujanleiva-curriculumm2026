@@ -39,6 +39,14 @@
     font-style: italic;
 }
 
+:root {
+    --color-primario: #0ED599;
+    --color-secundario: #7AB5EF;
+    --color-fondo: #f3ffd9;
+    --color-texto: #000000;
+    --color-detalles: #f0f8ff;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -46,7 +54,7 @@
 }
 
 body{
-    background-color: #f3ffd9;
+    background-color: var(--color-fondo);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -61,8 +69,8 @@ ul{
 h4{
     font-family: alegreyassi, sans-serif;
     font-size: 2rem;
-    text-align: center;
-    padding: 15px;
+    text-align: left;
+    padding: 15px 0px;
 }
 
 
@@ -73,28 +81,15 @@ h4{
     gap: 15px;
 }
 
-address{
-    padding: 0px 0px 20px; /* si vas a usar una sola propiedad de padding te conviene establecer solo esa (bottom) porque técnicamente ya estableciste en el selector universal que todos tienen que ser de cero, entonces estás repitiendo y no es correcto */
-}
-
-address a{
-    font-family: alegreyaregular;
-    font-size: 1.5rem;
-    color: #000000;
-    padding: 0px 0px 8px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .botonera a{
     font-family: alegreyaregular;
     font-size: 1.5rem;
-    color: #000000;
+    color: var(--color-texto);
 }
 
 .botonera a:hover{
-    background-color: #25deb0;
+    background-color: var(--color-primario);
     border-radius: 5px;
 }
 
@@ -104,12 +99,15 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 8px 6px 5px 20px;
-    background-color: #7AB5EF;
+    background-color: var(--color-secundario);
+    position: sticky;
+    top: 0;
 }
 
 main{
     display: flex;
     height: 920px;
+    width: auto;
     padding: 25px 60px;
     flex-direction: column;
     align-items: center;
@@ -148,7 +146,7 @@ main{
 h3{
     font-family: dancingscriptr, cursive;
     font-size: 5rem;
-    color: #7AB5EF;
+    color: var(--color-primario);
     text-align: center;
     padding-top: 0px;
     animation-name: titulares;
@@ -163,19 +161,19 @@ h3{
 
 @keyframes titulares {
     0% {
-        color: #7AB5EF;
+        color: var(--color-secundario);
     }
     50% {
-        color: #179072;
+        color: var(--color-primario);
     }
     100% {
-        color: #7AB5EF;
+        color: var(--color-detalles);
     }
 }
 
 h1{
     font-family: Dancing Script Bold, cursive;
-    color: #0ED599;
+    color: var(--color-primario);
     font-size: 10rem;
     font-style: normal;
     font-weight: 700px;
@@ -194,16 +192,21 @@ p{
 }
 
 footer{
-    background-color: #7AB5EF;
+    background-color: var(--color-secundario);
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 60px;
+    height: 68px;
 }
 
 .icono p{
     padding: 0;
     max-width: 400px;
+}
+
+.libro p{
+    padding: 10px 0px;
+    min-width: 70%;
 }
 
 h2{
@@ -222,28 +225,33 @@ footer ul{
 }
 
 .contenedor p{
-    color: aliceblue;
+    color: var(--color-detalles);
     font-family: alegreyaregular, sans-serif;
     font-size: 1.2rem;
     padding: 3px 20px;
 }
 
 #porfolio{
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
     padding: 10px 0 10px 50px;
+    flex: 1;
 }
 
-.hero{
+#porfolio p{
+    padding: 40px 0px 20px;
+    max-width: 400px;
+}
+
+#hero{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 20px 0px 0px;
     gap: 30px;
-}
+}s
 
 .contenido{
     display: flex;
@@ -253,23 +261,91 @@ footer ul{
     gap: 20px;
 }
 
-/*.contenido h3{
-    animation-name: none;
-    color: #000000;
-
-}*/
-
 #galerias{
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    height: 555px;
-    padding: 5px 0px 0px 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    padding: 5px 0px;
     align-items: flex-start;
     gap: 50px;
+    width: 100%;
 }
 
 
+.figurativo{
+    display: flex;
+    height: 920px;
+    padding: 25px 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    justify-content: center;
+}
+
+#editoriales{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    padding: 5px 0px;
+    align-items: flex-start;
+}
+
+.ilustracion p{
+    padding: 10px 0px;
+    min-width: 70%;
+}
+
+.tipografia{
+    display: flex;
+    height: 920px;
+    padding: 25px 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    justify-content: center;
+}
+
+.tipografia2{
+    display: flex;
+    max-height: 920px;
+    max-width: 1000px;
+    padding: 25px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    justify-content: center;
+}
+
+video{
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.video-contenido{
+    display: flex;
+    height: auto;
+    padding: 25px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    justify-content: center;
+}
+
+.zoomable {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.zoomable.zoomed {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+/* Estilos para mobile y otras pantallas*/
 @media screen and (min-width: 500px) and (max-width: 1200px) {
     main{
     display: flex;
@@ -300,7 +376,7 @@ footer ul{
     justify-content: space-between;
     align-items: center;
     padding: 25px 10px 20px 30px;
-    background-color: #7AB5EF;
+    background-color: var(--color-secundario);
     }
 
     h1{
@@ -320,28 +396,16 @@ footer ul{
     padding: 10px 0px 0px 60px;
     }
 
-    .icono{
-    background-color: #17907266;
-    display: flex;
-    align-items: left;
-    padding: 20px 60px 10px 60px;
-    margin: 25px;
-    gap: 20px;
-    flex-direction: row;
-    max-width: 762px;
-    border-radius: 30px 0px;
-    }
-
     h3{
     font-family: Dancing Script, cursive;
     font-size: 3.2rem;
-    color: #179072;
+    color: var(--color-primario);
     text-align: left;
     padding: 0px 40px;
     }
 
     footer{
-    background-color: #7AB5EF;
+    background-color: var(--color-secundario);
     display: flex;
     justify-content: space-around;
     width: 100%;

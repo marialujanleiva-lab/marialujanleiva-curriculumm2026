@@ -21,26 +21,76 @@
     </header>
 
     <main id="porfolio">
-        <section class="hero">
+        <section id="hero">
             <h1>Porfolio</h1>
-            <p>A continuación, se muestran algunos de los trabajos que he realizado durante mi carrera como estudiante de Diseño y Comunicación Visual.</p>
+            <p>Te muestro algunos trabajos que hice en la universidad: Afiches - Revistas - Libros - Ilustraciones - Presentaciones</p>
+
         </section>
         <article class="contenido">
             <h4>Afiches</h4>
             <div id="galerias">
-                <img src="img/afiche.figurativo.jpg" alt="Afiche 1" width="360" height="514">
-                <img src="img/aficheletristico.jpg" alt="Afiche 2" width="360" height="514">
-                <img src="img/afiche-tipo2.jpg" alt="Afiche 3" width="360" height="514">
-                <img src="img/afiche.jpg" alt="Afiche 4" width="360" height="514">
-                <img src="img/afiche-dis-esp.jpg" alt="Afiche 5" width="360" height="514">
+                <a href="afiche-suculentas.html">
+                    <img src="img/thumbnail/afiche-suculentas-thumbnail.jpg" alt="afiche" width="234" height="300">
+                </a>
+                <a href="afiche-figurativo.html">
+                    <img src="img/thumbnail/afiche-figurativo-thumbnail.jpg" alt="afiche" width="212" height="300">
+                </a>
+                <a href="afiche-tipo2.html">
+                    <img src="img/thumbnail/afiche-tipo2-thumbnail.jpg" alt="afiche" width="212" height="300">
+                </a>
+                <a href="afiche-letristico.html">
+                    <img src="img/thumbnail/aficheletristico-thumbnail.jpg" alt="afiche" width="212" height="300">
+                </a>
+                <a href="afiche-juguete.html">
+                    <img src="img/thumbnail/afiche-juguete-thumbnail.jpg" alt="afiche" width="210" height="300">
+                </a>
             </div>
-            <!-- En la web, la primera imagen aparece cortada y ya probé haciendo un div class de las imágenes pero me saca el scroll -->
         </article>
-        
+        <section class="libro">
+            <h4>Editorial</h4>
+            <div id="editoriales">
+                <img src="img/libroportada.jpg" alt="Portada de: El mundo de tus suculentas" width="580" height="386"> 
+                <img src="img/librodoblepagina.jpg" alt="Doble página del libro: El mundo de tus suculentas" width="580" height="387"> 
+                <img src="img/memoriadescriptivadoblepagina.jpg" alt="Contraportada del libro: El mundo de tus suculentas" width="580" height="387">
+                <img src="img/bookzine-apertura.jpg" alt="Doble página de: Bookzine" width="580" height="416">
+                <img src="img/bookzine-continua.jpg" alt="Continuación de: Bookzine" width="580" height="416">
+                <img src="img/bookzine-infog.jpg" alt="Información del libro: Bookzine" width="580" height="416">
+            </div>
+            <p>• Libro de tapa dura, con cosido artesanal. Este fue el trabajo final de Espacio Tipográfico 2 con temática de plantas, que incluye ilustraciones, texto y fotografías jerarquizados por medio de un grilla.</p>
+        </section>
+        <section class="ilustracion">
+            <h4>Ilustraciones</h4>
+            <div id="galerias">
+                <img src="img/esquilax.jpg" class="zoomable" alt="Ilustración digital" width="300" height="428">
+                <img src="img/autoretrato.jpg" class="zoomable" alt="Autoretrato" width="300" height="428">
+                <img src="img/lampa.jpg" class="zoomable" alt="Lampa" width="300" height="428">
+                <img src="img/jesús-mujeres.jpg" class="zoomable" alt="Jesús y mujeres" width="300" height="428">
+                <img src="img/corona-espinas.jpg" class="zoomable" alt="Corona de espinas" width="300" height="428">
+                <img src="img/resurrección_1.jpg" class="zoomable" alt="Resurrección" width="300" height="428">
+                <img src="img/padre-hijo.jpg" class="zoomable" alt="Padre e hijo" width="300" height="428">
+            </div>
+            <p>• En estas ilustraciones se combinan diferentes técnicas y estilos. Por un lado están las ilustraciones 100% digitales y por otro, las que partieron de un boceto analógico.</p>
+        </section>
+
+        <script>
+            document.querySelectorAll('.zoomable').forEach(img => {
+            img.addEventListener('click', () => {
+            img.classList.toggle('zoomed');
+            });
+            });
+        </script>
+
+        <article class="video">
+            <h4>Presentación</h4>
+            <div class="video-contenido">
+                <video src="img/medios-expresivos.mp4"  controls playsinline loop  width="960" height="544"></video>
+            </div>
+        </article>
     </main>
+
     <footer>
         <div class="contenedor">
-            <p>Cátedra: Wischñevsky 2026 | Alumna: María Luján Leiva</p>
+            <p>Cátedra: Wischñevsky 2026 | Alumna: María Luján Leiva | &copy; 2023 Mi Portfolio. Todos los derechos reservados.</p>
         <ul>
             <li>
                 <a href="https://www.instagram.com/lujiileiva?igsh=MWMzNng4cHMzNm1lbA==" target="_blank">
@@ -54,3 +104,4 @@
             </li>
         </ul>
     </footer>
+</body>
