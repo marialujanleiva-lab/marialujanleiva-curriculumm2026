@@ -514,6 +514,7 @@ main#contacto{
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+    justify-content: center;
     gap: 50px;
 }
 
